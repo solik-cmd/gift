@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рождественский фон</title>
+    <style>
+        /* Красный фон с рождественским вайбом */
+        body {
+            background-color: #B71C1C; /* Красный фон */
+            color: white; /* Белый цвет текста */
+            font-family: 'Arial', sans-serif; /* Шрифт */
+            text-align: center; /* Текст по центру */
+            padding: 50px; /* Отступы вокруг контента */
+            overflow: hidden; /* Скрыть элементы, выходящие за пределы экрана */
+        }
+
+        /* Стили для кнопки */
+        .christmas-button {
+            background-color: #FF5722; /* Оранжево-красный цвет кнопки */
+            color: white;              /* Белый текст */
+            border: none;              /* Без рамки */
+            padding: 12px 25px;        /* Отступы внутри кнопки */
+            text-align: center;        /* Текст по центру */
+            text-decoration: none;     /* Убираем подчеркивание */
+            display: inline-block;     /* Инлайн блок */
+            font-size: 18px;           /* Размер шрифта */
+            border-radius: 5px;        /* Скругленные углы */
+            cursor: pointer;          /* Курсор-указатель */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Плавный переход */
+        }
+
+        /* Эффект при наведении на кнопку */
+        .christmas-button:hover {
+            background-color: #FF3D00; /* Темный оранжевый оттенок */
+            transform: scale(1.1); /* Увеличение при наведении */
+        }
+
+        /* Снежинки на фоне */
+        @keyframes snow {
+            0% { transform: translateY(-100px); }
+            100% { transform: translateY(100vh); }
+        }
+
+        .snowflake {
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            animation: snow 5s linear infinite;
+        }
+
+        .snowflake:nth-child(odd) {
+            animation-duration: 6s;
+        }
+
+        .snowflake:nth-child(even) {
+            animation-duration: 4s;
+        }
+
+        /* Размещение снежинок в случайных местах */
+        .snowflake:nth-child(1) { left: 10%; animation-delay: 2s; }
+        .snowflake:nth-child(2) { left: 30%; animation-delay: 1s; }
+        .snowflake:nth-child(3) { left: 50%; animation-delay: 3s; }
+        .snowflake:nth-child(4) { left: 70%; animation-delay: 4s; }
+        .snowflake:nth-child(5) { left: 90%; animation-delay: 5s; }
+        .snowflake:nth-child(6) { left: 15%; animation-delay: 2.5s; }
+    </style>
+</head>
+<body>
+
+    <!-- Снежинки для рождественского настроения -->
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+
+    <!-- Кнопка с рождественским стилем -->
+    <button class="christmas-button" onclick="location.href='https://ezstat.ru/2tYyC4'">подарок</button>
+
+</body>
+</html>
